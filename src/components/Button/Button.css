@@ -1,0 +1,28 @@
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin-top: 10px;
+}
+
+.btn-wrapper button {
+  height: 55px;
+  width: 220px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fafafa;
+  font-size: 22px;
+  font-weight: 500;
+  background: #21b6b7;
+  transition: 0.4s ease;
+}
+
+.btn-wrapper button:hover {
+  box-shadow: 2px 2px 20px #21b6b7;
+}
+
+.btn-wrapper button:active {
+  transform: scale(0.96);
+}

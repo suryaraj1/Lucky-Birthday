@@ -14,7 +14,7 @@ class InputComponent extends React.Component {
         return (
             <div className='input-wrapper'>
                 <p className='input-label'>{
-                    inputType === 'Date' ? 'Date of Birth 🗓' : 
+                    inputType === 'date' ? 'Date of Birth 🗓' : 
                     'Lucky Number ✨'
                 }</p>
                 <input 

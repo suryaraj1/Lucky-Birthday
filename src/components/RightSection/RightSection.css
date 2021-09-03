@@ -1,0 +1,14 @@
+.right-section-wrapper {
+  height: 100%;
+}
+
+.right-section-container {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  padding: 60px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+}

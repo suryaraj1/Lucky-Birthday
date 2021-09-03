@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 
+.header-wrapper {
+  margin-top: 20px;
+}
+
 .header-main-text {
   font-size: 60px;
   font-weight: 700;
