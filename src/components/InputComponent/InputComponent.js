@@ -9,6 +9,16 @@ class InputComponent extends React.Component {
         }
     }
 
+    onChangeHandler = event => {
+        this.setState({
+            value: event.target.value
+        }, () => {
+            const { value } = this.state;
+            const { handler } = this.props;
+            handler(value);
+        })
+    }
+
     render() {
         const { inputType } = this.props;
         return (
@@ -20,6 +30,7 @@ class InputComponent extends React.Component {
                 <input 
                     className='input-box'
                     type={inputType === 'date' && 'date'} 
+                    onChange={this.onChangeHandler}
                 />
             </div>
         )
