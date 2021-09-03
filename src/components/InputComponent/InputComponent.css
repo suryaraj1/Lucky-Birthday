@@ -1,0 +1,21 @@
+.input-label {
+  color: #b9c9d1;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 12px;
+}
+
+.input-box {
+  width: 450px;
+  height: 73px;
+  outline: none;
+  border: 1px solid #252329;
+  background: #3c393f;
+  border-radius: 6px;
+  transition: 0.4s ease;
+}
+
+.input-box:focus {
+  border: 1px solid #21b6b7;
+}
