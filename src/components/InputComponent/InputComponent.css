@@ -25,6 +25,10 @@
   color: #fafafa;
 }
 
+.input-box::placeholder {
+  color: #6a6b6b;
+}
+
 .input-box:focus {
   border: 2px solid #21b6b7;
 }
