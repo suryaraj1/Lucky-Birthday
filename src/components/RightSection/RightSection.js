@@ -11,7 +11,8 @@ class RightSection extends React.Component {
         this.state = {
             birthDate: "",
             luckyNumber: "",
-            isLucky: false
+            isLucky: false,
+            clickCount: 0
         }
     }
 
@@ -40,24 +41,34 @@ class RightSection extends React.Component {
         return (this.getSumOfDigits(birthDate) % luckyNumber === 0);
     }
 
+    validateInput = (birthDate, luckyNumber) => {
+        const checkDate = !isNaN(Date.parse(birthDate));
+        const checkNumber = !isNaN(luckyNumber) && luckyNumber !== '';
+        console.log(checkDate, checkNumber);
+        return (checkDate && checkNumber);
+    }
+
     onClickHandler = () => {
         const { birthDate, luckyNumber } = this.state;
-        const isBirthdayLucky = this.isLuckyBirthday(birthDate, luckyNumber);
+        if (this.validateInput(birthDate, luckyNumber)) {
+            const isBirthdayLucky = this.isLuckyBirthday(birthDate, luckyNumber);
 
-        this.setState({
-            isLucky: isBirthdayLucky
-        })
+            this.setState({
+                isLucky: isBirthdayLucky,
+                clickCount: this.state.clickCount + 1
+            })
+        }
     }
 
     render() {
-        const { isLucky } = this.state;
+        const { isLucky, clickCount } = this.state;
         return (
             <div className='right-section-wrapper'>
                 <div className='right-section-container'>
                     <InputComponent inputType='date' handler={this.birthDateHandler}/>
                     <InputComponent handler={this.luckyNumberHandler}/>
                     <CheckButton clickHandler={this.onClickHandler}/>
-                    <AlertTile success={isLucky}/>
+                    {clickCount > 0 && <AlertTile success={isLucky}/>}
                 </div>
             </div>
         )
