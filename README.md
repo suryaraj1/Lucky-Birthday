@@ -10,3 +10,4 @@ A website which checks whether your birthday is lucky or not by calculating if s
 
 ### Built With 🛠
 * [React](https://reactjs.org/)
+* [Figma](https://www.figma.com/)
