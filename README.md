@@ -1,13 +1,20 @@
-# Lucky Birthday 
+<h1 align="center">Lucky Birthday</h1>
 
-A web app that lets you check if you have a lucky birthday or not. 🎊🎊
+<p>A web app that lets you check if you have a lucky birthday or not. 🎉🎉</p>
 
-## About the Project 📝
+<h2>🚀 Demo</h2>
 
-<img align="center" src="https://media.giphy.com/media/GbUwYzPa5YRPZghsBT/giphy.gif?cid=790b7611bd2834142b49461fd7fa1a07710b4eefc6943c62&rid=giphy.gif&ct=g"/>
+[lucky-birthday-123.netlify.app/](lucky-birthday-123.netlify.app/)
 
-A website which checks whether your birthday is lucky or not by calculating if sum of digits in your birthdate is divisible by your lucky number.
+<h2>Project Screenshots:</h2>
 
-### Built With 🛠
-* [React](https://reactjs.org/)
-* [Figma](https://www.figma.com/)
+<img src="https://i.ibb.co/ZKw1XjM/Screenshot-from-2021-09-05-17-08-10.png" alt="shields" width="800" height="400/">
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   React
+*   Figma
