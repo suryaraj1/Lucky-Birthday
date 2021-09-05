@@ -2,9 +2,9 @@
 
 <p>A web app that lets you check if you have a lucky birthday or not. 🎉🎉</p>
 
-<h2>🚀 Demo</h2>
+<h2>🚀 Demo </h2>
 
-[lucky-birthday-123.netlify.app/](lucky-birthday-123.netlify.app/)
+The web app is deployed to Netlify. <a href="https://lucky-birthday-123.netlify.app/" target="_blank">Link</a>
 
 <h2>Project Screenshots:</h2>
 
