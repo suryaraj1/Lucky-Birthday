@@ -19,10 +19,18 @@
   transition: 0.4s ease;
 }
 
-.btn-wrapper button:hover {
+.btn-wrapper .active:hover {
   box-shadow: 2px 2px 20px #21b6b7;
 }
 
-.btn-wrapper button:active {
+.btn-wrapper .active:active {
   transform: scale(0.96);
+}
+
+.btn-wrapper .disabled {
+  opacity: 0.5;
+}
+
+.btn-wrapper .disabled:hover {
+  transform: scale(1);
 }

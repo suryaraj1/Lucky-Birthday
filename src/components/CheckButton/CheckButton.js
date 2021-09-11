@@ -1,10 +1,10 @@
 import React from 'react';
 import './CheckButton.css';
 
-const Button = ({ clickHandler }) => {
+const Button = ({ clickHandler, validator }) => {
     return (
         <div className='btn-wrapper'>
-            <button onClick={clickHandler}>Check Number</button>
+            <button className={`${!validator ? 'disabled': 'active'}`} onClick={clickHandler} disabled={!validator}>Check Number</button>
         </div>
     )
 }
