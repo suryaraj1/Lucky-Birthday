@@ -60,6 +60,11 @@ class RightSection extends React.Component {
         }
     }
 
+    validateInput = () => {
+        const { birthDate, luckyNumber } = this.state;
+        return (birthDate !== "" && luckyNumber > 0);
+    }
+
     render() {
         const { isLucky, clickCount } = this.state;
         return (
@@ -67,7 +72,7 @@ class RightSection extends React.Component {
                 <div className='right-section-container'>
                     <InputComponent inputType='date' handler={this.birthDateHandler}/>
                     <InputComponent handler={this.luckyNumberHandler}/>
-                    <CheckButton clickHandler={this.onClickHandler}/>
+                    <CheckButton clickHandler={this.onClickHandler} validator={this.validateInput()}/>
                     {clickCount > 0 && <AlertTile success={isLucky}/>}
                 </div>
             </div>

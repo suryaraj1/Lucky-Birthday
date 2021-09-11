@@ -29,7 +29,7 @@ class InputComponent extends React.Component {
                 }</p>
                 <input 
                     className='input-box'
-                    type={inputType === 'date' && 'date'} 
+                    type={inputType === 'date' ? 'date' : 'number'} 
                     placeholder='Enter a lucky number'
                     onChange={this.onChangeHandler}
                 />
